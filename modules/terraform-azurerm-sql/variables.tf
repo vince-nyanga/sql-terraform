@@ -1,8 +1,3 @@
-variable "key_vault_id" {
-  description = "id of the key vault storing administrator login secrets."
-  type        = string
-}
-
 variable "administrator_username" {
   description = "administrator user name"
   type        = string

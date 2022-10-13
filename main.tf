@@ -53,7 +53,6 @@ module "sql" {
   server_name                    = var.sql_server_name
   resource_group_name            = data.azurerm_resource_group.rg.name
   location                       = data.azurerm_resource_group.rg.location
-  key_vault_id                   = data.azurerm_key_vault.vault.id
   administrator_username         = data.azurerm_key_vault_secret.sql_admin_username.value
   administrator_password         = data.azurerm_key_vault_secret.sql_admin_password.value
   allow_access_to_azure_services = true

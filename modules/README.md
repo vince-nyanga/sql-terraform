@@ -30,6 +30,7 @@ No modules.
 | <a name="input_administrator_username"></a> [administrator\_username](#input\_administrator\_username) | administrator user name | `string` | n/a | yes |
 | <a name="input_allow_access_to_azure_services"></a> [allow\_access\_to\_azure\_services](#input\_allow\_access\_to\_azure\_services) | whether or not to allow azure services to access the sql server. | `bool` | `false` | no |
 | <a name="input_ip_range_filter"></a> [ip\_range\_filter](#input\_ip\_range\_filter) | this value specifies the comma-separated set of IP address ranges in CIDR Format. | `string` | `""` | no |
+| <a name="input_key_vault_id"></a> [key\_vault\_id](#input\_key\_vault\_id) | id of the key vault storing administrator login secrets. | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | location. | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | resource group name. | `string` | n/a | yes |
 | <a name="input_server_name"></a> [server\_name](#input\_server\_name) | server nam. | `string` | n/a | yes |
