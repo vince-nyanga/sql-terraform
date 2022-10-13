@@ -65,6 +65,6 @@ module "sql" {
 
   tags = {
     env       = "dev"
-    managedBy = "nyangav@out.co.za"
+    createdBy = "Terraform"
   }
 }
