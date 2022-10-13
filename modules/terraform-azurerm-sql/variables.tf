@@ -37,6 +37,7 @@ variable "location" {
 variable "tags" {
   description = "tags."
   type        = map(any)
+  default     = {}
 }
 
 variable "ip_range_filter" {
