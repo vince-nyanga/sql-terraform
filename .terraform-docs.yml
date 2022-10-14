@@ -1,0 +1,34 @@
+# see: https://terraform-docs.io/user-guide/configuration/formatter
+formatter: markdown table
+
+header-from: header.md
+
+# see: https://terraform-docs.io/user-guide/configuration/sections
+sections:
+  show:
+    - header
+    - inputs
+    - providers
+
+output:
+  file: README.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+
+    {{ .Content }}
+
+    You can also show something after it!
+    <!-- END_TF_DOCS -->
+
+# see: https://terraform-docs.io/user-guide/configuration/sort
+sort:
+  enabled: true
+  by: required
+
+settings:
+  indent: 4
+  escape: true
+  default: true
+  required: true
+  type: true

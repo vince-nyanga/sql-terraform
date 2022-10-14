@@ -9,7 +9,7 @@ resource "azurerm_mssql_server" "this" {
   version                      = var.server_version
   administrator_login          = var.administrator_username
   administrator_login_password = var.administrator_password
-  minimum_tls_version          = "1.2"
+  minimum_tls_version          = "1.2" # make this a variable too with 1.2 as the default
   tags                         = var.tags
 }
 
