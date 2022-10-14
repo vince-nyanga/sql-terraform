@@ -26,7 +26,8 @@ tags                           = var.tags
 ```
 
 > **Warning**
-> Do not store the admin credentials in clear text inside your script. Rather use Azure Key Vault to safely store them.
+>
+> Do not store the admin credentials in clear text inside your script. Rather use a service like Azure Key Vault to safely store them.
 
 #### Providers
 
