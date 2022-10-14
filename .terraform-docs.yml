@@ -18,7 +18,6 @@ output:
 
     {{ .Content }}
 
-    You can also show something after it!
     <!-- END_TF_DOCS -->
 
 # see: https://terraform-docs.io/user-guide/configuration/sort

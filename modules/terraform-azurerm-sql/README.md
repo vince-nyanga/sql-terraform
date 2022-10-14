@@ -50,5 +50,4 @@ tags                           = var.tags
 | <a name="input_subnets"></a> [subnets](#input\_subnets) | list of v-net subnets that are allowed to access the server. | <pre>list(object({<br>    name      = string<br>    subnet_id = string<br>  }))</pre> | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | tags. | `map(any)` | `{}` | no |
 
-You can also show something after it!
 <!-- END_TF_DOCS -->
