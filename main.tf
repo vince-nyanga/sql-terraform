@@ -57,10 +57,7 @@ module "sql" {
   administrator_password         = data.azurerm_key_vault_secret.sql_admin_password.value
   allow_access_to_azure_services = true
   ip_range_filter                = "192.168.0.0/24,10.10.0.0/16"
-  subnets = [{
-    name      = "vhones-subnet-rule"
-    subnet_id = resource.azurerm_subnet.subnet.id
-  }]
+  subnet_ids                     = [resource.azurerm_subnet.subnet.id]
 
   tags = {
     env       = "dev"

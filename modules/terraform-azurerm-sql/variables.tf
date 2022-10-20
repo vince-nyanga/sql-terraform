@@ -47,11 +47,8 @@ variable "allow_access_to_azure_services" {
   default     = false
 }
 
-variable "subnets" {
+variable "subnet_ids" {
   description = "list of v-net subnets that are allowed to access the server."
-  type = list(object({
-    name      = string
-    subnet_id = string
-  }))
-  default = []
+  type        = list(string)
+  default     = []
 }
